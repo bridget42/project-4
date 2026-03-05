@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management Admin Panel</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>User Management</h1>
+
+    <!--form to create a new User-->
+    <form id="userForm">
+        <input type="text" id="fullName" placeholder="Full name" required />
+        <input type="text" id="userName" placeholder="User name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="password" placeholder="Password" required />
+        <input type="text" id="confirmPassword" placeholder="Confirm Password" required />
+
+        <select id="role" name="role">
+            <option value="Attendant">Attendant</option>
+            <option value="Manager">Manager</option>
+            <option value="Admin">Admin</option>
+        </select>
+
+        <select id="status" name="status">
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+        </select>
+
+        <button type="submit">Add User</button>
+    </form>
+
+    <!--search input-->
+    <input type="text" id="search" placeholder="Search by name, username, email or role" />
+
+    <!--User count summary-->
+    <p>Total Users: <span id="userCount">0</span></p>
+
+    <!--table to display users -->
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="userList"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

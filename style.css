@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #0d69a7;
+}
+
+#userForm {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#userForm input, #userForm select, #userForm button {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 18px);
+    box-sizing: border-box;
+}
+
+#userForm button {
+    background-color: #0d69a7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#userForm button:hover {
+    background-color: #0a5a8a;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#userCount {
+    font-weight: bold;
+    color: #0d69a7;
+}
+
+#userTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#userTable th, #userTable td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#userTable th {
+    background-color: #0d69a7;
+    color: white;
+}
+
+#userTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#userTable tbody tr:hover {
+    background-color: #e0f7fa;
+}
+
+/* Role colors */
+.role-Attendant { background-color: #e6800b; color: white; }
+.role-Manager { background-color: #103a96; color: white; }
+.role-Admin { background-color: #850b7a; color: white; }
+
+.status-Active { color: green; }
+.status-Inactive { color: red; }
